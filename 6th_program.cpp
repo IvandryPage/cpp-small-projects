@@ -8,8 +8,9 @@ int main()
     signed int random_garbage_value; // WARNING. not recommended because machine doesn't get enough information about the value
     unsigned int better_var {}; //only positive values
     int my_int {4}; // 4 bytes or more
-    double my_double {3.14}; // more precise than float,
-    float my_float {3.14};
+    double my_double {3.14}; // precision 15
+    long double my_long_double {1.12345678901234567890L}; // precision 20
+    float my_float {3.14f}; // precision 7
     char my_char {'A'};
     bool my_bool {true};
     auto my_auto {my_char}; // automaticallly defines the appropriate data types

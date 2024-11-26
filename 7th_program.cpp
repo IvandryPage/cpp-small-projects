@@ -15,5 +15,7 @@ int main()
     long long long_long {888};
     long long int long_long_int {999};
     unsigned long long int unsigned_long_long_int {1234};
+
+    long double my_long_double {1.e20L};
     return 0;
 }
