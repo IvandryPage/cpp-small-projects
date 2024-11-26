@@ -5,8 +5,8 @@
 // entry points
 int main()
 {
-    int random_garbage_value; // WARNING. not recommended because machine doesn't get enough information about the value
-    int better_var {};
+    signed int random_garbage_value; // WARNING. not recommended because machine doesn't get enough information about the value
+    unsigned int better_var {}; //only positive values
     int my_int {4}; // 4 bytes or more
     double my_double {3.14}; // more precise than float,
     float my_float {3.14};
