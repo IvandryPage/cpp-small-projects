@@ -29,9 +29,11 @@ int main()
     std::cin >> name >> age;
     std::cout << "Hello, " << name << "! You are " << age << " years old." << std::endl;
 
+
+    std::string full_name;
     std::cout << "Input your full name:" << std::endl;
     std::cin >> std::ws; // cin.ignore() but only works for spaces
-    std::getline(std::cin, name);
-    std::cout << "Hey, " << name << std::endl;
+    std::getline(std::cin, full_name);
+    std::cout << "Hey, " << full_name << std::endl;
     return 0;
 }
