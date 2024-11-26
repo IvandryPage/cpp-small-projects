@@ -5,7 +5,7 @@
 
 int main()
 {
-    short short_var {-32788};
+    short short_var {-328};
     short int short_int {455};
     unsigned short int unsigned_short_int {456};
 
