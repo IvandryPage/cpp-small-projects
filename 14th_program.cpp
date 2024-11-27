@@ -15,5 +15,8 @@ int main()
     std::cout << "number 1 >= number 2 : " << (num1 >= num2) << std::endl;
     std::cout << "number 1 == number 2 : " << (num1 == num2) << std::endl;
     std::cout << "number 1 != number 2 : " << (num1 != num2) << std::endl;
+
+
+    // &&, ||, !, Logical Operator
     return 0;
 }
