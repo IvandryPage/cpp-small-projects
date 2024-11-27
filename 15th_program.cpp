@@ -45,5 +45,7 @@ int main()
     std::cout << c << std::endl;
 
     std::cout.unsetf(std::ios::scientific | std::ios::fixed);
+
+    std::cout << std::showpoint; // menampilkan angka dibelakang koma walaupun .0
     return 0;
 }
