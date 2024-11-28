@@ -14,5 +14,6 @@ int main()
         std::cout << "score[" << i << "] :" << scores[i] << std::endl;
 
     char nama[9] {"Ivandry"};
+    char message[] {'H', 'e', 'l', 'l', 'o','\0'};
     std::cout << nama << std::endl; // not safe if character array is not null terminated
 }
