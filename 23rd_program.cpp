@@ -45,5 +45,19 @@ int main()
     p_num1 = nullptr;
     delete p_num2;
     p_num2 = nullptr;
+
+
+    // BAD IMPLEMENTATION OF POINTER
+    int *p_number; // contains junk address : could be anything
+    *p_number = 55; // Writing into unknown junk address : could be something important like OS
+    // it would cause the program to crash
+
+    //initializing pointer to null
+    int *p_number2 {}; // initialized with pointer of zero : nullptr
+
+    *p_number = 33; // Writing into a pointer pointing nowhere : BAD, CRASH
+    std::cout << std::endl;
+    std::cout << "Reading and writing through nullptr: " << *p_number << std::endl;
+     
     return 0;
 }
