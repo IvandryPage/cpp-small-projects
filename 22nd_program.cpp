@@ -21,4 +21,11 @@ int main()
 
     //deferencing a pointer
     std::cout << "p_int: " << *p_int << std::endl;
+
+    // Character pointer
+
+    const char *p_char {"Hello World!"}; // should be const because of the p_char only reference to the first character of the string literal
+
+    std::cout << "mesage from p_char: " << &p_char << std::endl;
+    std::cout << "value : " << *p_char << std::endl;
 }
