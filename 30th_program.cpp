@@ -1,6 +1,6 @@
 // Template function for repetitive function
 #include <iostream>
-
+#include <cstring>
 // the bad way
 /*
 int maximum (int a, int b)
@@ -30,9 +30,24 @@ T maximum (T a, T b)
 template <typename T>
 T multiply (T a, T b)
 {
+    std::cout << "In - &a: " << &a << std::endl;
     return a * b;
 }
 
+// template by references
+template <typename T>
+const T sum (const T &a, const T &b)
+{
+    std::cout << "In - &a: " << &a << std::endl;
+    return a + b;
+}
+
+// TEMPLATE SPECIALIZATION
+template <>
+const char* maximum<const char*> (const char* a, const char* b);
+
+template <>
+int maximum<int> (int a, int b);
 
 int main()
 {
@@ -62,5 +77,17 @@ int main()
 
     // TEMPLATE TYPE DEDUCTION
     maximum<double>(b, c); // it would return in double even b and c are integer
+
+    // passing by reference
+    std::cout << std::endl;
+    std::cout << "Out - &a: " << &y << std::endl;
+    sum(y, x);
+    std::cout << "Out - &a: " << &y << std::endl;
     return 0;
+}
+
+template<>
+const char* maximum<const char*> (const char *a, const char *b)
+{
+    return (std::strcmp(a,b) > 0) ? a : b;
 }
